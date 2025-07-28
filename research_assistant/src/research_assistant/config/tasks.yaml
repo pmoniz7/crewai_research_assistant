@@ -1,0 +1,198 @@
+subtask_creator_for_analyst:
+  description: >
+    You are tasked with creating a set of 3 distinct subtopics that will be assigned to 3
+    AI analysts.
+    Each subtopic should be directly related to the main topic {topic} and have detailed
+    content and descriptions. 
+    That is, it should address a subtopic of the central theme {topic}, with a unique 
+    subtopic for each analyst.
+
+    Follow these instructions carefully:
+
+    1. First, review the research topic:
+    {topic}
+
+    2. Each subtopic should be a subtopic and related to {topic}.
+
+    3. Determine the most interesting subtopics based on the documents found.
+
+    4. Choose the main subtopics, considering we have 3 Analysts.
+
+    5. Assign an Analyst to each subtopic.
+  expected_output: >
+    The output should consist of three subtopics with detailed content and descriptions to allow analysts to ask questions using their detailed content and descriptions.
+    Each subtopic should always have a header named after the analyst responsible for the subtopic.
+    Example:
+    Subtopic for Analyst 1:
+    "Improved Decision-Making xxxxx xxx xxxx  ...."
+    Subtopic for Analyst 2:
+    "xxxx xxxx  ...."
+    
+task_interview_analyst_1:
+  description: >
+    You are an analyst responsible for interviewing an expert with deep knowledge of Generative AI,
+    including the main frameworks in the field—with a special emphasis on LangGraph.
+    Your goal during the interview is to extract as much information as possible about Subtopic for Analyst 1,
+    focusing on obtaining relevant, interesting, and specific insights into the topic.
+
+    Guidelines for gathering insights:
+    1. Interesting: surprising or counterintuitive information—avoid the obvious.
+    2. Specific: concrete data, practical examples, scenarios, or real-world applications—avoid vague generalizations.
+    Instructions:
+    The analyst should refine the questions based on previous answers to delve deeper into the topic.
+    Ask a maximum of four questions focused on deepening and refining your understanding of Subtopic for Analyst 1.
+  expected_output: >
+    The agent should produce a concise and informative report, structured as follows:
+
+    1. General Summary
+    A short paragraph (3 to 5 lines) with an overview of what was learned about Subtopic for Analyst 1 during the interview.
+
+    2. Key Insights
+    List of 3 to 5 insights gained during the interview, focusing on:
+    - Interesting (non-obvious, counterintuitive, surprising)
+    - Specific (with concrete examples, mention of tools, frameworks, real-life cases, etc.)
+
+    Suggested format for insights:
+    - 🔍 Insight 1: [description]
+    - 🔍 Insight 2: [description]
+
+    3. Examples or Cases Mentioned
+    If the expert cited examples, real-life applications, or use cases, describe them here (can be a list of 1 to 3 items).
+
+task_interview_analyst_2:
+  description: >
+    You are an analyst responsible for interviewing an expert with deep knowledge of Generative AI,
+    including the main frameworks in the field—with a special emphasis on LangGraph.
+    Your goal during the interview is to extract as much information as possible about Subtopic for Analyst 2,
+    focusing on obtaining relevant, interesting, and specific insights into the topic.
+
+    Guidelines for gathering insights:
+    1. Interesting: surprising or counterintuitive information—avoid the obvious.
+    2. Specific: concrete data, practical examples, scenarios, or real-world applications—avoid vague generalizations.
+    Instructions:
+    The analyst should refine the questions based on previous answers to delve deeper into the topic.
+    Ask a maximum of four questions focused on deepening and refining your understanding of Subtopic for Analyst 2.
+  expected_output: >
+    The agent should produce a concise and informative report, structured as follows:
+
+    1. General Summary
+    A short paragraph (3 to 5 lines) with an overview of what was learned about Subtopic for Analyst 2 during the interview.
+
+    2. Key Insights
+    List of 3 to 5 insights gained during the interview, focusing on:
+    - Interesting (non-obvious, counterintuitive, surprising)
+    - Specific (with concrete examples, mention of tools, frameworks, real-life cases, etc.)
+
+    Suggested format for insights:
+    - 🔍 Insight 1: [description]
+    - 🔍 Insight 2: [description]
+
+    3. Examples or Cases Mentioned
+    If the expert cited examples, real-life applications, or use cases, describe them here (can be a list of 1 to 3 items).
+
+task_interview_analyst_3:
+  description: >
+    You are an analyst responsible for interviewing an expert with deep knowledge of Generative AI,
+    including the main frameworks in the field—with a special emphasis on LangGraph.
+    Your goal during the interview is to extract as much information as possible about Subtopic for Analyst 3,
+    focusing on obtaining relevant, interesting, and specific insights into the topic.
+
+    Guidelines for gathering insights:
+    1. Interesting: surprising or counterintuitive information—avoid the obvious.
+    2. Specific: concrete data, practical examples, scenarios, or real-world applications—avoid vague generalizations.
+    Instructions:
+    The analyst should refine the questions based on previous answers to delve deeper into the topic.
+    Ask a maximum of four questions focused on deepening and refining your understanding of Subtopic for Analyst 3.
+  expected_output: >
+    The agent should produce a concise and informative report, structured as follows:
+
+    1. General Summary
+    A short paragraph (3 to 5 lines) with an overview of what was learned about Subtopic for Analyst 3 during the interview.
+
+    2. Key Insights
+    List of 3 to 5 insights gained during the interview, focusing on:
+    - Interesting (non-obvious, counterintuitive, surprising)
+    - Specific (with concrete examples, mention of tools, frameworks, real-life cases, etc.)
+
+    Suggested format for insights:
+    - 🔍 Insight 1: [description]
+    - 🔍 Insight 2: [description]
+
+    3. Examples or Cases Mentioned
+    If the expert cited examples, real-life applications, or use cases, describe them here (can be a list of 1 to 3 items).
+   
+task_ia_specialist_1:
+  description: >
+    Respond with technical depth and clarity to analyst questions about Subtopic for Analyst 1, sharing useful, 
+    non-obvious, specific insights applicable to professional practice.
+    Your responses should include real-world examples, best practices, common challenges, and recommendations based on 
+    practical experience.
+    Adjust your explanation to the level of a technical professional with intermediate AI knowledge.
+  expected_output: >
+    A series of complete responses to the analyst's questions, containing:
+      1. Well-structured technical information.
+      2. Specific, real-world examples (when possible).
+      3. Explanations that avoid excessive jargon, with clarity and a practical focus.
+      4. Tips, common pitfalls, and suggestions for useful tools/frameworks.
+      5. All answers must be directly related to Analyst Subtopic 1.
+
+task_ia_specialist_2:
+  description: >
+    Respond with technical depth and clarity to analyst questions about Subtopic for Analyst 2, sharing useful, 
+    non-obvious, specific insights applicable to professional practice.
+    Your responses should include real-world examples, best practices, common challenges, and recommendations based on 
+    practical experience.
+    Adjust your explanation to the level of a technical professional with intermediate AI knowledge.
+  expected_output: >
+    A series of complete responses to the analyst's questions, containing:
+      1. Well-structured technical information.
+      2. Specific, real-world examples (when possible).
+      3. Explanations that avoid excessive jargon, with clarity and a practical focus.
+      4. Tips, common pitfalls, and suggestions for useful tools/frameworks.
+      5. All answers must be directly related to Analyst Subtopic 2.
+
+task_ia_specialist_3:
+  description: >
+    Respond with technical depth and clarity to analyst questions about Subtopic for Analyst 3, sharing useful, 
+    non-obvious, specific insights applicable to professional practice.
+    Your responses should include real-world examples, best practices, common challenges, and recommendations based on 
+    practical experience.
+    Adjust your explanation to the level of a technical professional with intermediate AI knowledge.
+  expected_output: >
+    A series of complete responses to the analyst's questions, containing:
+      1. Well-structured technical information.
+      2. Specific, real-world examples (when possible).
+      3. Explanations that avoid excessive jargon, with clarity and a practical focus.
+      4. Tips, common pitfalls, and suggestions for useful tools/frameworks.
+      5. All answers must be directly related to Analyst Subtopic 3.
+task_expert_technical_writer:
+  description: >
+    You are a specialized technical writer.
+    Your task is to create a report based on a set of information obtained from the responses of the following experts:
+    - Senior AI Engineer I
+    - Senior AI Engineer II
+    - Senior AI Engineer III
+    
+    1. You will use the expected output (expected_output:) of each expert's task to create the report.
+
+    2. Create a report structure using markdown formatting:
+       - Use ## for the section title
+       - Use ### for the subsection headings
+
+    3. Write the report following this structure:
+    a. Title (heading ##)
+    b. Abstract (heading ###)
+    c. Sources (header ###)
+
+    4. Create an engaging title based on the expert's focus area:
+    
+    5. For the summary section:
+    - Create a summary with general context related to the expert's focus area
+    - Emphasize what is new, interesting, or surprising about the insights shared in the interview
+    - Aim for a maximum of 600 words
+  expected_output: >
+    Your task is to create a report based on a set of information obtained from the responses of the following experts:
+    - Senior AI Engineer I
+    - Senior AI Engineer II
+    - Senior AI Engineer III
+    The report must strictly adhere to the specifications described in the assignment.
